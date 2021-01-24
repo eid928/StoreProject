@@ -27,6 +27,18 @@ public class CustomerDaoImp implements CustomerDao{
 		list.add(customer);
 	}
 	
+	public static void main(String[] args) {
+		String sql = "insert into customers (id, name, password, address, phone, birthday) values (10, '辦公', '123', '產品', '123', 11111111111);";
+		JdbcTemp jdbcTemp = new JdbcTemp();
+		jdbcTemp.update(new PreparedStatementCreator() {
+			@Override
+			public PreparedStatement createPreparedStatement(Connection conn) throws SQLException {
+				PreparedStatement pst = conn.prepareStatement(sql);
+				return pst;
+			}
+		});
+	}
+	
 	@Override
 	public Customer findByPk(String pk) {
 		

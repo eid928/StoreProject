@@ -119,14 +119,14 @@ public class OrderLineItemDaoImp implements OrderLineItemDao {
 	}
 
 	@Override
-	public void remove(String pk) {
+	public void remove(long pk) {
 		String sql = "delete from orderlineitems where id=?";
 		jdbcTemp.update(new PreparedStatementCreator() {
 			
 			@Override
 			public PreparedStatement createPreparedStatement(Connection conn) throws SQLException {
 				PreparedStatement pst = conn.prepareStatement(sql);
-				pst.setString(1, pk);
+				pst.setLong(1, pk);
 				return pst;
 			}
 		});

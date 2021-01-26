@@ -9,6 +9,6 @@ public interface OrderLineItemDao {
 	List<OrderLineItem> findAll();
 	void create(OrderLineItem orderLineItem);
 	void modify(OrderLineItem orderLineItem);
-	void remove(String pk);
+	void remove(long pk);
 
 }

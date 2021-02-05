@@ -78,7 +78,7 @@ class GoodsDaoImpTest {
 		assertEquals("", goods.getDisplaysize());
 	}
 
-	
+	@Disabled
 	@Test
 	void testFindStartEnd() {
 		List<Goods> list = new ArrayList<>();

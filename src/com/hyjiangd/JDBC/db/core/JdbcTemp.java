@@ -33,17 +33,17 @@ public class JdbcTemp {
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			throw new DataAccessException("TdbcTemp中的SQLException: ", e);
+			throw new DataAccessException("JdbcTemp中的SQLException: ", e);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
-			throw new DataAccessException("TdbcTemp中的SQLException: ", e);
+			throw new DataAccessException("JdbcTemp中的SQLException: ", e);
 		} finally {
 			if(connection != null) {
 				try {
 					connection.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					throw new DataAccessException("TdbcTemp中不能關閉數據庫連接: ", e);
+					throw new DataAccessException("JdbcTemp中不能關閉數據庫連接: ", e);
 				}
 			}
 			if(pstatement != null) {
@@ -51,7 +51,7 @@ public class JdbcTemp {
 					pstatement.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					throw new DataAccessException("TdbcTemp中不能關閉語句物件: ", e);
+					throw new DataAccessException("JdbcTemp中不能關閉語句物件: ", e);
 				}
 			}
 			if(resultset != null) {
@@ -59,7 +59,7 @@ public class JdbcTemp {
 					resultset.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					throw new DataAccessException("TdbcTemp中不能關閉結果集: ", e);
+					throw new DataAccessException("JdbcTemp中不能關閉結果集: ", e);
 				}
 			}
 		}
@@ -84,17 +84,17 @@ public class JdbcTemp {
 			 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			throw new DataAccessException("TdbcTemp中的SQLException: ", e);
+			throw new DataAccessException("JdbcTemp中的SQLException: ", e);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
-			throw new DataAccessException("TdbcTemp中的SQLException: ", e);
+			throw new DataAccessException("JdbcTemp中的SQLException: ", e);
 		} finally {
 			if(connection != null) {
 				try {
 					connection.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					throw new DataAccessException("TdbcTemp中不能關閉數據庫連接: ", e);
+					throw new DataAccessException("JdbcTemp中不能關閉數據庫連接: ", e);
 				}
 			}
 			if(pstatement != null) {
@@ -102,7 +102,7 @@ public class JdbcTemp {
 					pstatement.close();
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
-					throw new DataAccessException("TdbcTemp中不能關閉語句物件: ", e);
+					throw new DataAccessException("JdbcTemp中不能關閉語句物件: ", e);
 				}
 			}
 		}

@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>智捷网上电脑商城</title>
+<title>智捷網上電腦商城</title>
 <link rel="stylesheet" type="text/css" href="css/public.css">
 <style type="text/css">
 a:link {
@@ -28,16 +28,16 @@ a:hover {
 </head>
 
 <body>
-<div class="header">智捷网上电脑商城</div>
+<div class="header">智捷網上電腦商城</div>
 <hr width="100%" />
 <div>
-  <p class="text1"> <img src="images/4.jpg"   align="absmiddle" /> <a href="Catalog.html">商品列表</a> </p>
-  <p class="text2"> 您可以从产品列表中浏览感兴趣的产品进行购买 </p>
+  <p class="text1"> <img src="images/4.jpg"   align="absmiddle" /> <a href="Controller?action=list">商品列表</a> </p>
+  <p class="text2"> 您可以從產品列表中瀏覽感興趣的產品進行購買 </p>
 </div>
 <hr width="100%" />
 <div>
-  <p class="text1"> <img src="images/mycar1.jpg" align="absmiddle"  /> <a href="Cart.html">购物车</a> </p>
-  <p class="text2"> 您可以把感兴趣的商品暂时放在购物车中 </p>
+  <p class="text1"> <img src="images/mycar1.jpg" align="absmiddle"  /> <a href="Controller?action=cart">購物車</a> </p>
+  <p class="text2"> 您可以把感興趣的商品暫時放在購物車中 </p>
 </div>
 <%@include file="footer.jsp" %>
 </body>

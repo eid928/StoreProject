@@ -39,7 +39,7 @@ public class OrdersServiceImp implements OrdersService{
 		
 		for (Map<String, Object> item : cart) {
 			// item = [商品ID, 數量]
-			Long goodsId = (Long)item.get("goodsid");
+			Long goodsId = (Long) item.get("goodsid");
 			Integer quantity = (Integer)item.get("quantity");
 			
 			Goods goods = goodsDao.findByPk(goodsId);

@@ -261,6 +261,13 @@ public class Controller extends HttpServlet {
 			request.getSession().removeAttribute("cart");
 		} else if ("main".equals(action)) {
 			request.getRequestDispatcher("main.jsp").forward(request, response);
+		} else if ("logout".equals(action)) {
+			// 帳號登出，清除購物車、清除使用者登陸訊息
+			request.getSession().removeAttribute("customer");
+			request.getSession().removeAttribute("cart");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+		} else if ("reg_init".equals(action)) {
+			request.getRequestDispatcher("customer_reg.jsp").forward(request, response);
 		}
 	}
 

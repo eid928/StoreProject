@@ -35,7 +35,7 @@
     <tr height="40" >
       <td align="right">&nbsp;</td>
       <td ><input type="image" src="images/login_button.jpg" onclick="document.forms[0].fn.value='login'" />
-        &nbsp;&nbsp;&nbsp;&nbsp; <a href="customer_reg.jsp"><img src="images/reg_button.jpg" border="0" /></a></td>
+        &nbsp;&nbsp;&nbsp;&nbsp; <a href="Controller?action=reg_init"><img src="images/reg_button.jpg" border="0" /></a></td>
     </tr>
   </table>
   <input type="hidden" name="action" value="login">

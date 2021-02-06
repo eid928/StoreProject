@@ -8,6 +8,7 @@
     	<img src="images/mycar1.jpg" align="absmiddle" /> <a href="Controller?action=cart">&nbsp;購物車</a>
      	| <a href="zhanghu.html">我的帳號</a> 
      	| <a href="Controller?action=list">商品列表</a>
+     	| <a href="Controller?action=logout">登出</a>
     </td>
   </tr>
 </table>
